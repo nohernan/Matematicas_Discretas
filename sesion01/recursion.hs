@@ -37,7 +37,7 @@ fact n
 -- Fibonacci
 fib :: Int -> Int
 fib n 
-  | n<1 = error "Haaaa"
+  | n<1 = error "El número de Fibonacci para un numero negativo esta indeterminado."
 fib 1 = 1
 fib 2 = 1
 fib n = fib(n-1) + fib(n-2)
