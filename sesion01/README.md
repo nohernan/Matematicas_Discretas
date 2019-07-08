@@ -30,6 +30,7 @@ Enseguida se carga el archivo `recursion.hs` mediante el comando:
 
 * `*Main> fact 20`
 * `*Main> fact 5467`
+* `*Main> fact (-7)`
 
 Una [lista](http://www.tsm-resources.com/alists/fact.html) del factorial de los números del 0 al 69.
 
@@ -37,5 +38,6 @@ Una [lista](http://www.tsm-resources.com/alists/fact.html) del factorial de los 
 
 * `*Main> fib 28`
 * `*Main> fib 38`
+* `*Main> fib (-35)`
 
 ---

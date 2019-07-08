@@ -2,6 +2,7 @@
 data Nat = Z | S Nat deriving (Show,Eq)
 
 
+--------------------------------------
 -- Suma de números naturales
 sumNat :: Nat -> Nat -> Nat
 sumNat Z m = m
