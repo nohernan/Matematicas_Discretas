@@ -10,26 +10,23 @@ Enseguida se carga el archivo `recursion.hs` mediante el comando:
 
 `Prelude> :l recursion.hs`
 
-*Ejemplo de ejecución en haskell.*
+**Ejemplo de ejecución en haskell.**
 
-*Operaciones en número naturales.*
+**Operaciones en número naturales.**
 
-Suma:
-`*Main> sumNat (S Z) (S (S Z))`
+*Suma: `*Main> sumNat (S Z) (S (S Z))`
+*Multiplicación: `*Main> multNat (S (S Z)) (S (S (S (S Z))))`
 
-Multiplicación:
-`*Main> multNat (S (S Z)) (S (S (S (S Z))))`
+**Factorial**
 
-*Factorial* 
-`*Main> fact 20`
-
-`*Main> fact 5467`
+*`*Main> fact 20`
+*`*Main> fact 5467`
 
 Una [lista](http://www.tsm-resources.com/alists/fact.html) del factorial de los números del 0 al 69.
 
 *Fibonacci*
-`*Main> fib 28`
 
-`*Main> fib 38`
+*`*Main> fib 28`
+*`*Main> fib 38`
 
 ---
