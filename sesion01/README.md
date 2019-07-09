@@ -52,14 +52,15 @@ Una de las estructuras de datos más fundamentales en cualquier lenguaje de prog
 
 ## Strings
 
-Python tiene un clase de cadenas (_strings_) integrada llamada "str" con muchas caracterísitcas útiles. Las literales de tipo cadenas pueden ser delimitadas por comillas dobles o sencillas, aunque las comillas simples son usadas más comúnmente. La diagonal invertida escapa símbolos de la forma habitual dentro de las comillas dobles o senciilas -- por ejemplo \n \' \". Las cadenas en Python son "inmutables" lo que significa que no pueden cambiar después de que han sido creadas. Carácteres en una cadena pueden ser accesados usando las sintaxis estándar [], y como Java o C++, Python usa un sistema de índices base cero, de modo que si _s_ es 'hola' _s[1]_ es 'o'.
+Python tiene un clase de cadenas (_strings_) integrada llamada "str" con muchas caracterísitcas útiles. Las literales de tipo cadenas pueden ser delimitadas por comillas dobles o sencillas, aunque las comillas simples son usadas más comúnmente. La diagonal invertida escapa símbolos de la forma habitual dentro de las comillas dobles o senciilas -- por ejemplo \n \\' \\". Las cadenas en Python son "inmutables" lo que significa que no pueden cambiar después de que han sido creadas. Carácteres en una cadena pueden ser accesados usando las sintaxis estándar [], y como Java o C++, Python usa un sistema de índices base cero, de modo que si _s_ es 'hola' _s[1]_ es 'o'.
 
-En el archivo se tienen varias definiciones en Python que utilizan los elementos anteriormente definidos.
+En el archivo [intro.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion01/intro.py) se tienen definidas algunas funciones en Python que utilizan los elementos anteriormente definidos.
 
-La función _adjacentElementsProducts_ encuentra un par de elementos adjuntos de un arreglo de enteros tales que su multiplicación es la mayor posible, y regresa tal multiplicación.
+* La función _adjacentElementsProducts_ encuentra un par de elementos adjuntos de un arreglo de enteros tales que su multiplicación es la mayor posible, y regresa tal multiplicación.
+* La función _allLongestStrings_ regresa un arreglo conteniendo todas las cadenas más grandes pertenecientes al arreglo que se le pasa como argumento.
 
-La función _allLongestStrings_ regresa un arreglo conteniendo todas las cadenas más grandes pertenecientes al arreglo que se le pasa como argumento.
+Las funciones aquí descritas se tomaron de [https://codesignal.com/](https://codesignal.com/).
 
-Las funciones aquí descritas se tomaron de
+Para ejecutar el archivo abrimos una terminal con directorio actual de trabajo `Matematicas_Discretas/sesion01/`. Enseguida corremos la instrucción 
 
-Para ejecutar el archivo abrimos una terminal con directorio actual de trabajo `Matematicas_Discretas/sesion01/`. Enseguida corremos la instrucción `python3.6 intro.py`.
+`$ python3.6 intro.py`
