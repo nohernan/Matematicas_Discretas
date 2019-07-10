@@ -50,7 +50,7 @@ Una [lista](http://www.tsm-resources.com/alists/fact.html) del factorial de los 
 
 Una de las estructuras de datos más fundamentales en cualquier lenguaje de programación son los arreglos. Python no tiene una estructura de datos de arreglos nativos, pero tiene listas que son más generales y pueden ser usadas como arreglos multidimensionales muy fácilmente. Una lista es un colección ordenada de objetos de cualquier tipo.
 
-## Strings
+## Cadenas
 
 Python tiene un clase de cadenas (_strings_) integrada llamada "str" con muchas caracterísitcas útiles. Las literales de tipo cadenas pueden ser delimitadas por comillas dobles o sencillas, aunque las comillas simples son usadas más comúnmente. La diagonal invertida escapa símbolos de la forma habitual dentro de las comillas dobles o senciilas -- por ejemplo \n \\' \\". Las cadenas en Python son "inmutables" lo que significa que no pueden cambiar después de que han sido creadas. Carácteres en una cadena pueden ser accesados usando las sintaxis estándar [ ], y como Java o C++, Python usa un sistema de índices base cero, de modo que si _s_ es 'hola' _s[1]_ es 'o'.
 
@@ -60,7 +60,9 @@ Las listas por comprensión proveen de una menara concisa para crear listas. Ent
 
 Por ejemplo, supongamos que queremos crear una lista de cuadrados de números, el siguiente código realiza la tarea de forma elegante y breve:
 
-`squares = [x**2 for x in range(10)]`
+```python
+squares = [x**2 for x in range(10)]
+```
 
 Una lista por comprensión consiste de corchetes conteniendo una expresión seguida de una cláusula _for_, seguida de cero o más cláusulas _for_ o _if_. El resultado será una nueva lista que se obtiene de evaluar la expresión en el contexto de las cláusulas _for_ of _if_ que siguen. Por ejemplo, la lista que se define abajo combina elementos de dos lsitas si es que no son iguales:
 
@@ -85,7 +87,7 @@ Hay también un valor de escalonamiento, el cual puede ser combinado con la sint
 
 
 ```python
-a[start:stop:step] # elementos comenzando en start no rebasando a stop, con un escalonamiento de step.
+a[start:stop:step] # elementos comenzando en start no rebasando a stop, con un escalonamiento de step
 ```
 
 El punto clave es recordar que el valor `:stop` representa el primer valor que no pertenece a la rebanada que se está determinando. Así, la diferencia entre `stop` y `start` es el número de elementos seleccionados (si es que `step` es 1, el valor por defecto).
