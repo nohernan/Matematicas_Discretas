@@ -19,7 +19,9 @@ En una terminal con directorio actual de trabajo `Matematicas_Discretas/sesion01
 
 Enseguida se carga el archivo `recursion.hs` mediante el comando:
 
-`Prelude> :l recursion.hs`
+```haskell
+Prelude> :l recursion.hs
+```
 
 ## Ejemplo de ejecución en haskell
 
@@ -34,13 +36,15 @@ Enseguida se carga el archivo `recursion.hs` mediante el comando:
 * `*Main> fact 5467`
 * `*Main> fact (-7)`
 
-Una [lista](http://www.tsm-resources.com/alists/fact.html) del factorial de los números del 0 al 69.
+Una [lista](http://www.tsm-resources.com/alists/fact.html) del factorial de los números del 0 al 99 (y también del 999).
 
 **Fibonacci**
 
 * `*Main> fib 28`
 * `*Main> fib 38`
 * `*Main> fib (-35)`
+
+Una [lista](http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibtable.html) ahora de la serie de Fibonacci de los números del 0 al 300.
 
 ---
 
@@ -108,3 +112,9 @@ Las funciones aquí descritas se tomaron de [https://codesignal.com/](https://co
 Para ejecutar el archivo abrimos una terminal con directorio actual de trabajo `Matematicas_Discretas/sesion01/`. Enseguida corremos la instrucción 
 
 `$ python3.6 intro.py`
+
+---
+
+Más ejemplos de funciones recursivas definidas en Python se encuentran en el archivo [recursion.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion01/recursion.py), donde se estudian el factorial, la serie de Fibonacci y la serie de [Perrin](http://mathworld.wolfram.com/PerrinSequence.html). Para ejecutar los ejemplos en dicho archivo empleamos la instrucción siguiente en una terminal con directorio actual de trabajo `Matematicas_Discretas/sesion01/`.
+
+`$ python3.6 recursion.py`
