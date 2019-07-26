@@ -100,6 +100,23 @@ Más información sobre la indexación en este [link](https://stackoverflow.com/
 
 ---
 
+## Instalación de Python
+
+Para el curso usaremos python 3.7 que se instala con las instrucciones siguientes desde una terminal en Ubuntu 18.04. 
+
+1. `$ sudo apt-get install build-essential checkinstall`
+1. `$ sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev`
+1. `$ cd /usr/src`
+1. `$ sudo wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz`
+1. `$ sudo tar xzf Python-3.7.3.tgz`
+1. `$ cd Python-3.7.3`
+1. `$ sudo ./configure --enable-optimizations`
+1. `$ sudo make altinstall`
+
+Para verificar la instlación exitosa de Python 3.7 ejecutar la siguiente instrucción en una terminal: `$ python3.7 -V`. Las instrucciones anteriores fueron tomadas de [este enlace][https://tecadmin.net/install-python-3-7-on-ubuntu-linuxmint/].
+
+---
+
 En el archivo [intro.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion01/intro.py) se tienen definidas algunas funciones en Python que utilizan los elementos anteriormente definidos.
 
 * La función _adjacentElementsProducts_ encuentra un par de elementos adjuntos de un arreglo de enteros tales que su multiplicación es la mayor posible, y regresa tal multiplicación.
@@ -111,10 +128,22 @@ Las funciones aquí descritas se tomaron de [https://codesignal.com/](https://co
 
 Para ejecutar el archivo abrimos una terminal con directorio actual de trabajo `Matematicas_Discretas/sesion01/`. Enseguida corremos la instrucción 
 
-`$ python3.6 intro.py`
+`$ python 3.7 intro.py`
 
 ---
 
 Más ejemplos de funciones recursivas definidas en Python se encuentran en el archivo [recursion.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion01/recursion.py), donde se estudian el factorial, la serie de Fibonacci y la serie de [Perrin](http://mathworld.wolfram.com/PerrinSequence.html). Para ejecutar los ejemplos en dicho archivo empleamos la instrucción siguiente en una terminal con directorio actual de trabajo `Matematicas_Discretas/sesion01/`.
 
-`$ python3.6 recursion.py`
+`$ python 3.7 recursion.py`
+
+---
+
+En clases posteriores se estudiará la complejidad de los algoritmos. En particular, se verá como es su desempeño en términos de una familia de funciones que tiene un mismo comportamiento. Por ejemplo, una familia de funciones para el logaritmo tiene asociadas funciones logaritmo con distintas bases, pero dada la fórmula ![equation][https://latex.codecogs.com/gif.latex?log_a(x)=\frac{log_b(x)}{log_b(a)}] sabemos que los elementos de tal familia varían por una contante. Para graficar el logaritmo en varias bases consideramos el archivo. Para ejecutar dicho archivo tenemos que instalar algunas bibliotecas de Python con los comandos:
+
+1. `$ sudo apt-get install python-pip python3.7-pip`
+1. `$ sudo pip3.7 install --upgrade pip`
+1. `$ sudo -H pip3.7 install -U numpy`
+1. `$ sudo -H pip3.7 install -U matplotlib`
+
+Ahora sí podemos correr las siguientes instrucciones en una terminal abierta en la misma ubicación donde está 
+
