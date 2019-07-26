@@ -113,7 +113,7 @@ Para el curso usaremos python 3.7 que se instala con las instrucciones siguiente
 1. `$ sudo ./configure --enable-optimizations`
 1. `$ sudo make altinstall`
 
-Para verificar la instlación exitosa de Python 3.7 ejecutar la siguiente instrucción en una terminal: `$ python3.7 -V`. Las instrucciones anteriores fueron tomadas de [este enlace][https://tecadmin.net/install-python-3-7-on-ubuntu-linuxmint/].
+Para verificar que la instalación fue exitosa hay que ejecutar la siguiente instrucción en una terminal: `$ python3.7 -V`. Las instrucciones anteriores fueron tomadas de [este enlace](https://tecadmin.net/install-python-3-7-on-ubuntu-linuxmint/).
 
 ---
 
@@ -138,12 +138,12 @@ Más ejemplos de funciones recursivas definidas en Python se encuentran en el ar
 
 ---
 
-En clases posteriores se estudiará la complejidad de los algoritmos. En particular, se verá como es su desempeño en términos de una familia de funciones que tiene un mismo comportamiento. Por ejemplo, una familia de funciones para el logaritmo tiene asociadas funciones logaritmo con distintas bases, pero dada la fórmula ![equation][https://latex.codecogs.com/gif.latex?log_a(x)=\frac{log_b(x)}{log_b(a)}] sabemos que los elementos de tal familia varían por una contante. Para graficar el logaritmo en varias bases consideramos el archivo. Para ejecutar dicho archivo tenemos que instalar algunas bibliotecas de Python con los comandos:
+En clases posteriores se estudiará la complejidad de los algoritmos. En particular, se verá como es su desempeño en términos de una familia de funciones que tiene un mismo comportamiento. Por ejemplo, una familia de funciones para el logaritmo tiene asociadas varias funciones logaritmo con distintas bases, pero dada la fórmula ![equation](https://latex.codecogs.com/gif.latex?log_a%28x%29%3D%5Cfrac%7Blog_b%28x%29%7D%7Blog_b%28a%29%7D) sabemos que los elementos de tal familia varían por factor contante. Para graficar el logaritmo en varias bases consideramos el archivo. Para ejecutar dicho archivo tenemos que instalar algunas bibliotecas de Python con los comandos:
 
 1. `$ sudo apt-get install python-pip python3.7-pip`
 1. `$ sudo pip3.7 install --upgrade pip`
 1. `$ sudo -H pip3.7 install -U numpy`
 1. `$ sudo -H pip3.7 install -U matplotlib`
 
-Ahora sí podemos correr las siguientes instrucciones en una terminal abierta en la misma ubicación donde está 
+Ahora sí podemos correr la siguiente instrucción en una terminal abierta en la misma ubicación donde está 
 
