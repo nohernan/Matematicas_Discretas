@@ -100,23 +100,6 @@ Más información sobre la indexación en este [link](https://stackoverflow.com/
 
 ---
 
-## Instalación de Python
-
-Para el curso usaremos python 3.7 que se instala con las instrucciones siguientes desde una terminal en Ubuntu 18.04. 
-
-1. `$ sudo apt-get install build-essential checkinstall`
-1. `$ sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev`
-1. `$ cd /usr/src`
-1. `$ sudo wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz`
-1. `$ sudo tar xzf Python-3.7.3.tgz`
-1. `$ cd Python-3.7.3`
-1. `$ sudo ./configure --enable-optimizations`
-1. `$ sudo make altinstall`
-
-Para verificar que la instalación fue exitosa hay que ejecutar la siguiente instrucción en una terminal: `$ python3.7 -V`. Las instrucciones anteriores fueron tomadas de [este enlace](https://tecadmin.net/install-python-3-7-on-ubuntu-linuxmint/).
-
----
-
 En el archivo [intro.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion01/intro.py) se tienen definidas algunas funciones en Python que utilizan los elementos anteriormente definidos.
 
 * La función _adjacentElementsProducts_ encuentra un par de elementos adjuntos de un arreglo de enteros tales que su multiplicación es la mayor posible, y regresa tal multiplicación.

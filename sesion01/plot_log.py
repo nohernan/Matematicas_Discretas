@@ -14,7 +14,7 @@ plt.xlim((-1,11))
 plt.ylim((-6,11))
 
 # Función identidad
-plt.plot(range(-1,11), range(-1,11),  
+plt.plot(range(-1,12), range(-1,12),  
          color = 'dimgray',label='f(x)=x',ls=':')
 
 # Logaritmo base 1.5
