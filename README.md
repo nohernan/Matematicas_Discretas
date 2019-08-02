@@ -5,8 +5,9 @@ Página del curso [aquí](https://sites.google.com/view/mat-discretas-201/).
 ## Haskell
 _Haskell_ es un lenguaje de programación funcional puro y perezoso, cuyos tipos son determinados estáticamente de manera polifórmica. Más información en el [wiki oficial](https://wiki.haskell.org/). 
 
+### Instalación de Haskell
 
-_Haskell_ se utilizará en el laboratorio de manera  ocasional. Se recomienda instalar `stack` para correr programas en Haskell. En Ubuntu 18.04 `stack` se instala ejecutando el siguiente comando en  una terminal:
+_Haskell_ se utilizará en el laboratorio de manera ocasional. Se recomienda instalar `stack` para correr programas en Haskell. En Ubuntu 18.04 `stack` se instala ejecutando el siguiente comando en una terminal:
 
 `$ wget -qO- https://get.haskellstack.org/ | sh`
 
@@ -17,7 +18,7 @@ Para verificar que la instalación fue correcta se ejecuta el comando `stack --v
 ## Python
 _Python_ es un lenguaje de programación de alto nivel, orientado a objetos, interpretado con semántica dinámica. Sus estructuras de datos de alto nivel integradas, combinadas con su tipificación dinámica y ligado dinámico, hace a este lenguaje muy atractivo para el Desarrollo de Aplicaciones Rápido, así como para su uso como lenguaje _script_ o adhesivo para conectar componentes existentes. La sintaxis sencilla y fácil de aprender de _Python_ enfatiza legibilidad y por lo tanto reduce su costo de mantenimiento. _Python_ suporta módulos y paquetes, y fomenta la modularidad de programas y el reuso del código. 
 
-## Instalación de Python
+### Instalación de Python
 
 Para el curso usaremos python 3.7 que se instala con las instrucciones siguientes desde una terminal en Ubuntu 18.04. 
 
