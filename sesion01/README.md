@@ -36,7 +36,7 @@ Prelude> :l recursion.hs
 * `*Main> fact 5467`
 * `*Main> fact (-7)`
 
-Una [lista](http://www.tsm-resources.com/alists/fact.html) del factorial de los números del 0 al 99 (y también del 999).
+Una lista del factorial de los números del 0 al 99 (y también del 999) [aquí](http://www.tsm-resources.com/alists/fact.html).
 
 **Fibonacci**
 
@@ -44,7 +44,12 @@ Una [lista](http://www.tsm-resources.com/alists/fact.html) del factorial de los 
 * `*Main> fib 38`
 * `*Main> fib (-35)`
 
-Una [lista](http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibtable.html) ahora de la serie de Fibonacci de los números del 0 al 300.
+Una lista ahora de la serie de Fibonacci de los números del 0 al 300 [acá](http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibtable.html).
+
+Desde el intérprete de _haskell_ se genera una lista con los primeros 30 números de Fibonacci del siguiente modo, nótese el uso de listas por comprensión.
+
+`*Main> [fib(n) | n <-[0..30]]`
+
 
 ---
 
