@@ -11,7 +11,9 @@ _Haskell_ se utilizará en el laboratorio de manera ocasional. Se recomienda ins
 
 `$ wget -qO- https://get.haskellstack.org/ | sh`
 
-Para verificar que la instalación fue correcta se ejecuta el comando `stack --version`, la respuesta esperada debe ser algo como `Version 2.1.3, Git revision 636e3a759d51127df2b62f90772def126cdf6d1f (7735 commits) x86_64 hpack-0.31.2`. La instrucción para instalar  _haskell stack_ se tomó de este [enlace](https://docs.haskellstack.org/en/stable/README/#how-to-install). 
+Para verificar que la instalación fue correcta se ejecuta el comando `stack --version`, la respuesta esperada debe ser algo como `Version 2.1.3, Git revision 636e3a759d51127df2b62f90772def126cdf6d1f (7735 commits) x86_64 hpack-0.31.2`. La instrucción para instalar  _haskell stack_ se tomó de este [enlace](https://docs.haskellstack.org/en/stable/README/#how-to-install).
+
+Si surge el error `<command line>: can't load .so/.DLL for: libgmp.so (libgmp.so: cannot open shared object file: No such file or directory)`, hay que intalar `libgmp3-dev` con el comando `$ sudo apt install libgmp3-dev `.
 
 ---
 
