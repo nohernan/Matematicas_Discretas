@@ -18,7 +18,7 @@ En el archivo [estruc_rec.hs](https://github.com/nohernan/Matematicas_Discretas/
 
 Una buena parte del contenido que se muestra enseguida fue tomado de [este enlace](https://www.python-course.eu/graphs_python.php).
 
-Python no tiene un tipo de datos integrado para gráficas, pero es fácil implementarlas en Python. Un tipo de datos es ideal para representar gráficas en Python, los [diccionarios](https://www.python-course.eu/dictionaries.php). Considere la siguiente gráfica
+Python no tiene un tipo de datos integrado para gráficas, pero es fácil implementarlas en Python. Los [diccionarios](https://www.python-course.eu/dictionaries.php) son un tipo de datos ideal para representar gráficas en Python. Considere la siguiente gráfica
 
 
 Puede ser implementada en Python de la siguiente manera
@@ -48,7 +48,7 @@ def generate_edges(graph):
 print(generate_edges(graph))
 ```
 
-Como resultado de ejecutar el código anterior sobre el dictionario arriba dado, ambas presentes en el archvo, obteniendo como salida:
+Como resultado de ejecutar el código anterior sobre el dictionario arriba dado, ambas presentes en el archvo, obtenemos como salida:
 
 ```python
 $ python3 graph_simple.py 
