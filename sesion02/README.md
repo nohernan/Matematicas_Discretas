@@ -20,7 +20,7 @@ Una buena parte del contenido que se muestra enseguida fue tomado de [este enlac
 
 Python no tiene un tipo de datos integrado para gráficas, pero es fácil implementarlas en Python. Los [diccionarios](https://www.python-course.eu/dictionaries.php) son un tipo de datos ideal para representar gráficas en Python. Considere la siguiente gráfica
 
-[diagrama0]:https://github.com/nohernan/Matematicas_Discretas/tree/master/sesion02/img/diagram0.png "Diagrama inicial"
+[diagrama0]: https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/img/diagram0.png "Diagrama inicial"
 
 Puede ser implementada en Python de la siguiente manera
 
