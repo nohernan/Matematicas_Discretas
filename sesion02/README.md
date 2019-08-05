@@ -48,11 +48,8 @@ def generar_aristas(grafica):
 print(generar_aristas(mi_grafica))
 ```
 
-Como resultado de ejecutar el código anterior sobre el dictionario arriba dado, ambas presentes en el archivo [rep_graf.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/rep_graf.py), obtenemos como salida:
+Como resultado de ejecutar el código anterior sobre el diccionario arriba dado, ambos presentes en [rep_graf.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/rep_graf.py), mediante el comando `$ python3.7 rep_graf.py` obtenemos:
 
-```
-$ python3.7 rep_graf.py
-```
 ```python
 [('a', 'b'), ('a', 'c'), ('a', 'd'), ('b', 'a'), ('b', 'c'), ('c', 'a'), ('c', 'b'), ('d', 'a')]
 ```
@@ -65,5 +62,5 @@ Para mayor información y explicación sobre la orientación a objetos en _Pytho
 1. [Real python](https://realpython.com/python3-object-oriented-programming/).
 1. [Programiz](https://www.programiz.com/python-programming/object-oriented-programming).
 
-En el archivo [clase_grafcias.py]() se tiene una clase que representa gráficas. 
+En el archivo [clase_grafcias.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/clase_grafcias.py) se tiene una clase que representa gráficas. 
 
