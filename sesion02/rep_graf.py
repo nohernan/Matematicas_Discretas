@@ -10,7 +10,7 @@ def generar_aristas(grafica):
     aristas = []
     for v in grafica:
         for adyacente in grafica[v]:
-            aristas.append((v, adyacente))
+            aristas.append({v, adyacente})
 
     return aristas
 

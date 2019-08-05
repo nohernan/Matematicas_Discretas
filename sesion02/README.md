@@ -50,9 +50,20 @@ print(generar_aristas(mi_grafica))
 
 Como resultado de ejecutar el código anterior sobre el dictionario arriba dado, ambas presentes en el archivo [rep_graf.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/rep_graf.py), obtenemos como salida:
 
-```python
+```
 $ python3.7 rep_graf.py
+```
+```python
 [('a', 'b'), ('a', 'c'), ('a', 'd'), ('b', 'a'), ('b', 'c'), ('c', 'a'), ('c', 'b'), ('d', 'a')]
 ```
 
 ### Gráficas como una clase de Python
+
+Para mayor información y explicación sobre la orientación a objetos en _Python_ se pueden consultar las siguientes ligas:
+1. [Documentación oficial](https://docs.python.org/3/tutorial/classes.html).
+1. [Course sobre _Python_](https://www.python-course.eu/python3_object_oriented_programming.php).
+1. [Real python](https://realpython.com/python3-object-oriented-programming/).
+1. [Programiz](https://www.programiz.com/python-programming/object-oriented-programming).
+
+En el archivo [clase_grafcias.py]() se tiene una clase que representa gráficas. 
+
