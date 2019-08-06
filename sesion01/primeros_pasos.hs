@@ -1,4 +1,4 @@
--- Función que calcula duplica su argumento
+-- Función que duplica su argumento
 doble x = x + x
 
 
@@ -14,9 +14,13 @@ doble_condicion z =
      else z/2
 
 
--- Uso de 'let' para calcular (x+1)+(x+1)^2+(x+1)^3
-polinomio x = let suma = x + 1 
-              in suma+suma^2+suma^3
+-- Composición de funciones
+doble_doble = doble_condicion . doble
+
+
+-- Uso de 'let' para calcular 1+(x+y)+(x+y)^2+(x+y)^3
+polinomio x y = let suma = x + y 
+                in 1+suma+suma^2+suma^3
 
 
 -- Ejemplo del uso de 'where'. Dada una lista se intercambian el primero
@@ -32,12 +36,20 @@ inter_pos lst = if lst == []
     res  = if lst2 == [] then [] else (tail lst2) ++ [head lst2]
 
 
--- Composición de funciones
-
 -- Funciones anónimas
+valor_abs_listas xs = filter (\x-> mod x 2 == 0) xs
+
 
 -- Listas por comprensión
+serie_geo :: Int -> Int -> [Int]
+serie_geo r exp = [r^n | n<-[0..exp]]
 
+serie_geo_valor :: Int -> Int -> Int
+serie_geo_valor r exp = sum $ serie_geo r exp
+
+
+-- Las función primeros_primos genera una lista de primos menores o iguales al
+-- argumento de la función. Para ello se necesitan de las funciones intSqrt y es_primo
 intSqrt = floor . sqrt . fromInteger
 
 es_primo n = not $ any (\x -> n `mod` x == 0) [2..intSqrt n]

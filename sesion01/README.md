@@ -11,6 +11,13 @@
 
 # Haskell
 
+Algunas características y funcionalidad básica de _haskell_ se puede apreciar en el archivo [primeros_pasos.hs](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion01/primeros_pasos.hs). Allí se ejemplifican
+1. la definición de funciones,
+1. la composición de funciones,
+1. el uso de `let` y `where`,
+1. las funciones anónimas, y
+1. las listas por comprensión.
+
 En el archivo [recursion.hs](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion01/recursion.hs) se encuentran algunas definiciones y funciones recursivas descritas en el lenguaje _haskell_.
 
 En una terminal con directorio actual de trabajo `Matematicas_Discretas/sesion01/` se ejecuta la siguiente instrucción para llamar al intérprete de _haskell_:
@@ -117,6 +124,16 @@ Las funciones aquí descritas se tomaron de [https://codesignal.com/](https://co
 Para ejecutar el archivo abrimos una terminal con directorio actual de trabajo `Matematicas_Discretas/sesion01/`. Enseguida corremos la instrucción 
 
 `$ python 3.7 intro.py`
+
+### Ejercicio
+
+Usted tiene una cantidad específica de dinero en su cuenta de banco. Cada año su saldo incrementa a la misma `taza` de interés. Suponiendo que usted no retira ni hace depósitos adicionales, determine cuanto tiempo se requiere para sobrepasar un `umbral` específico. 
+
+La firma de la función a implementar debe ser `depositProfit(deposito, taza, umbral)`.
+
+#### Ejemplo de ejecución
+
+Para `deposito = 100`, `taza = 20` y `umbral = 170`, la salida debe ser `depositProfit(deposito, taza, umbral) = 3`.
 
 ---
 
