@@ -18,6 +18,11 @@ Algunas características y funcionalidad básica de _haskell_ se puede apreciar 
 1. las funciones anónimas, y
 1. las listas por comprensión.
 
+### Ejercicio
+Programar en _haskell_ una función `elem_maximo(lst)` que encuentre el elemento máximo en la lista `lst` de enteros no negativos.
+
+---
+
 En el archivo [recursion.hs](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion01/recursion.hs) se encuentran algunas definiciones y funciones recursivas descritas en el lenguaje _haskell_.
 
 En una terminal con directorio actual de trabajo `Matematicas_Discretas/sesion01/` se ejecuta la siguiente instrucción para llamar al intérprete de _haskell_:
@@ -147,7 +152,7 @@ En clases posteriores se estudiará la complejidad de los algoritmos. En particu
 
 ![equation](https://latex.codecogs.com/gif.latex?log_a%28x%29%3D%5Cfrac%7Blog_b%28x%29%7D%7Blog_b%28a%29%7D) 
 
-sabemos que los elementos de tal familia varían por un factor contante. Para graficar el logaritmo en varias bases consideramos el archivo [plot_log.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion01/plot_log.py). Para ejecutar dicho archivo tenemos que instalar algunas bibliotecas de Python con los comandos:
+sabemos que los elementos de tal familia varían por un factor contante, es decir, son linealmente dependientes. Para graficar el logaritmo en varias bases consideramos el archivo [plot_log.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion01/plot_log.py). Para ejecutar dicho archivo tenemos que instalar algunas bibliotecas de Python con los comandos:
 
 1. `$ sudo apt-get install python-pip python3.7-pip`
 1. `$ sudo pip3.7 install --upgrade pip`
