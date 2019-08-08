@@ -25,9 +25,11 @@ def fib(i):
         return fib(i-1) + fib(i-2)
 
 ## Execution
-n_fib = 30
-print('La serie de Fibonacci de 0 al',n_fib,':')
-print([fib(k) for k in range(n_fib + 1)],'\n')
+n_fib = 100
+print('El número de Fibonacci en la posición',n_fib,' es ',fib(n_fib),'\n')
+
+#print('La serie de Fibonacci de 0 al',n_fib,':')
+#print([fib(k) for k in range(n_fib + 1)],'\n')
 
 
 ## -----------------------------------------------------

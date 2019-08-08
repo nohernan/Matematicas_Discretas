@@ -88,9 +88,28 @@ Una lista por comprensión consiste de corchetes conteniendo una expresión segu
 [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
 ```
 
+## Rango
+
+La función `range()` produce una lista de números sobre la que típicamente se itera mediante _loops_. A menudo se requiere este uso cuando se realiza una cierta acción por un número determinado de veces, prestanto atención o no al índice que se va generando. En otras ocasiones se requiere iterar sobre una lista teniendo presente el índice generado.
+
+La función `range()` puede ser llamada de dos maneras:
+
+1. `range(stop)` donde `stop` representa el número de enteros a generar, comenzando en cero. Por  ejemplo, `range(3) = [0,1,2]`.
+1. `range([start,] stop[, step])`
+    1. `start`: valor inicial de la lista.
+    1. `stop`: se generan números hasta `stop`, sin incluirlo.
+    1. `step`: diferencia entre cada número en la lista.
+
+Obsérvese que:
+* Todos los parámetros deben ser enteros.
+* Todos los parámetros pueden ser positivos o negativos.
+* `range()` is basado en el índice 0, es decir, los índices de las listas inician en 0, no en 1. La sintaxis para accesar al primer elemento de una lista es `lista[0]`. Por lo tanto, el último índice generado por `range()` es `stop`, sin incluirlo. Por ejemplo, `range(1,5)` genera la lista `[1,2,3,4]`.
+
+Más información en [este enlace](https://www.pythoncentral.io/pythons-range-function-explained/).
+
 ## Indexación
 
-Los arreglos pueden ser indexados usando la sintexis estándar de Python. Tales reglas de sintaxis incluyen los siguientes casos:
+Se pueden extraer secciones de arreglos mediante indexación usando la sintexis estándar de Python. Tales reglas de sintaxis incluyen los siguientes casos:
 
 ```python
 a[start:stop]  # elementos comenzando en start hasta stop-1
