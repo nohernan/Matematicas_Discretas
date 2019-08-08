@@ -114,7 +114,7 @@ Más información en [este enlace](https://www.pythoncentral.io/pythons-range-fu
 
 ## Indexación
 
-Se pueden extraer secciones de arreglos mediante indexación usando la sintexis estándar de Python. Tales reglas de sintaxis incluyen los siguientes casos:
+Se pueden extraer secciones de arreglos mediante indexación usando la sintaxis estándar de Python. Tales reglas de sintaxis incluyen los siguientes casos:
 
 ```python
 a[start:stop]  # elementos comenzando en start hasta stop-1
