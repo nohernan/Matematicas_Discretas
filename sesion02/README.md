@@ -62,5 +62,11 @@ Para mayor información y explicación sobre la orientación a objetos en _Pytho
 1. [Real python](https://realpython.com/python3-object-oriented-programming/).
 1. [Programiz](https://www.programiz.com/python-programming/object-oriented-programming).
 
-En el archivo [clase_graficas.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/clase_graficas.py) se tiene una clase que representa gráficas. 
+En el archivo [clase_graficas.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/clase_graficas.py) se tiene una clase que representa gráficas. Al ejecutarla se imprime en pantalla los elementos de la gráfica que se muestra abajo. También se ejemplifica como es que se añaden vértices y aristas.
+
+![diagrama1](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/img/diagram1.png "Diagrama Dos")
+
+
+### BFS en Python
+El algortimo que hace búsqueda por amplitud en gráficas se encuentra en [bfs.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/bfs.py) y se ejecuta sobre la gráfica anterior.
 
