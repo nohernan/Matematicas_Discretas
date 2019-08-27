@@ -68,5 +68,12 @@ En el archivo [clase_graficas.py](https://github.com/nohernan/Matematicas_Discre
 
 
 ### BFS en Python
-El algortimo que hace búsqueda por amplitud en gráficas se encuentra en [bfs.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/bfs.py) y se ejecuta sobre la gráfica anterior.
+El algortimo que hace búsqueda por amplitud en gráficas se encuentra en [bfs.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/bfs.py), su ejecución se ejemplifica por la imagen siguiente, tomada del libro _Introduction to Algorithms_ por Thomas H. Cormen, et al.
 
+![bfs](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/img/bfs.png "BFS")
+
+
+### DFS en Python
+El algortimo que hace búsqueda por amplitud en gráficas se encuentra en [bfs.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/bfs.py), su ejecución se ejemplifica por la imagen siguiente, tomada del libro _Introduction to Algorithms_ por Thomas H. Cormen, et al.
+
+![dfs](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/img/dfs.png "DFS")

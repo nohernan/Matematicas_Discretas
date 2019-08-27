@@ -1,4 +1,5 @@
 import queue
+import graficas
 from vertice import Vertice,Color
 
 ##########
@@ -19,38 +20,19 @@ def bfs(grafica, s):
                 v.distancia = u.distancia + 1
                 v.padre = u.nombre
                 Q.put(v)
-                u.color = Color.black
+        u.color = Color.black
                 
-##############################
-v_a = Vertice("a")
-v_b = Vertice("b")
-v_c = Vertice("c")
-v_d = Vertice("d")
-v_e = Vertice("e")
-v_f = Vertice("f")
-
-vertices = [v_a, v_b, v_c, v_d, v_e, v_f]
-    
-g = { "a" : [v_d],
-      "b" : [v_c],
-      "c" : [v_b, v_c, v_d, v_e],
-      "d" : [v_a, v_c],
-      "e" : [v_c],
-      "f" : []
-}
-
-
-bfs(g,v_c)
+bfs(graficas.g_bfs,graficas.bfs_s)
 
 print ("\nDistancias calculadas")
-for v in vertices:
+for v in graficas.vertices_bfs:
     print ("Distancia a la raíz de ",v.nombre," es ",v.distancia)
     
     
 print ("\nPadre dentro del árbol")
-for v in vertices:
+for v in graficas.vertices_bfs:
     print ("Padre del vertice ",v.nombre," es ",v.padre)
 
 print ("\nColor de los vértices")
-for v in vertices:
+for v in graficas.vertices_bfs:
     print ("Color del vértice ",v.nombre," es ",v.color)

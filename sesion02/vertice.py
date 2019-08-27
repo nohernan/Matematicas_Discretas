@@ -8,7 +8,7 @@ class Color(enum.Enum):
 
 ##############################    
 class Vertice:
-    def __init__(self,nombre,color=Color.white,distancia="infinito",padre=None):
+    def __init__(self,nombre,color=Color.white,distancia="infinito",padre=None,descubierto=0,finalizado=0):
         self.__nombre = nombre
 
         self.__color = color
@@ -16,6 +16,11 @@ class Vertice:
         self.__distancia = distancia
             
         self.__padre = padre
+
+        ## DFS
+        self.__descubierto = descubierto
+
+        self.__finalizado = finalizado
 
     @property
     def nombre(self):
@@ -45,3 +50,21 @@ class Vertice:
     @padre.setter
     def padre(self,p):
         self.__padre = p
+
+    @property
+    def descubierto(self):
+        return self.__descubierto
+
+    @descubierto.setter
+    def descubierto(self,des):
+        self.__descubierto = des
+
+    @property
+    def finalizado(self):
+        return self.__finalizado
+
+    @finalizado.setter
+    def finalizado(self,f):
+        self.__finalizado = f
+
+        

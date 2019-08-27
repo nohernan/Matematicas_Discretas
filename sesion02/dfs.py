@@ -1,4 +1,5 @@
 import queue
+import graficas
 from vertice import Vertice,Color
 
 ##########
@@ -14,7 +15,7 @@ def dfs(grafica, vertices):
 def dfs_visit(grafica,u):
     global time
     time += 1
-    u.distancia = time
+    u.descubierto = time
     u.color = Color.gray
     for v in grafica[u.nombre]:
         if v.color == Color.white:
@@ -22,38 +23,18 @@ def dfs_visit(grafica,u):
             dfs_visit(grafica,v)
     u.color = Color.black
     time += 1
+    u.finalizado = time
     
                 
-##############################
-v_a = Vertice("a")
-v_b = Vertice("b")
-v_c = Vertice("c")
-v_d = Vertice("d")
-v_e = Vertice("e")
-v_f = Vertice("f")
+dfs(graficas.g_dfs,graficas.vertices_dfs)
 
-vertices = [v_a, v_b, v_c, v_d, v_e, v_f]
-    
-g = { "a" : [v_d],
-      "b" : [v_c],
-      "c" : [v_b, v_c, v_d, v_e],
-      "d" : [v_a, v_c],
-      "e" : [v_c],
-      "f" : []
-}
-
-
-dfs(g,vertices)
-
-#print ("\nDistancias calculadas")
-#for v in vertices:
-#    print ("Distancia a la raíz de ",v.nombre," es ",v.distancia)
+print ("\nTiempos de descubrimiento y de término")
+for v in graficas.vertices_dfs:
+    print ("Tiempo en el que el vértice ",v.nombre," es descubierto ",v.descubierto)
+    print ("Tiempo en el que el vértice ",v.nombre," se termina de analizar ",v.finalizado,"\n")
     
     
 print ("\nPadre dentro del árbol")
-for v in vertices:
+for v in graficas.vertices_dfs:
     print ("Padre del vertice ",v.nombre," es ",v.padre)
 
-#print ("\nColor de los vértices")
-#for v in vertices:
-#    print ("Color del vértice ",v.nombre," es ",v.color)
