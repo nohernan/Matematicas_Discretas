@@ -55,7 +55,7 @@ Como resultado de ejecutar el código anterior sobre el diccionario arriba dado,
 ```
 
 #### Ejercicio
-La transpuesta de una gráfica dirigida G=(V,E) es la gráfica Gt=(V,Et), donde Et = {(_v_,_u_)<-V x V | (_u_,_v_)<-E}. Así, Gt es G con todas sus aristas revertidas. Desriba un algoritmo para calcular Gt a partir de G, para la representación de G por listas de adjacencia y por matriz de adyacencia. 
+La transpuesta de una gráfica dirigida G=(V,E) es la gráfica Gt=(V,Et), donde Et = {(_v_,_u_)<-V x V | (_u_,_v_)<-E}. Así, Gt es G con todas sus aristas revertidas. Describa un algoritmo para calcular Gt a partir de G, para la representación de G por listas de adjacencia y por matriz de adyacencia. 
 
 ### Gráficas como una clase de Python
 
@@ -83,4 +83,4 @@ El algortimo que hace búsqueda por amplitud en gráficas se encuentra en [bfs.p
 
 #### Ejercicios
 1. Reescriba el procedimiento DFS, usando una pila para eliminar la recusión.
-1. Muestre que podemos usar una búsqueda a profundidad sobre una gráfica no dirigida G para identifiar los componentes conexas de G, y que el bosque a profundidad contiene tantos árboles como G tiene componentes conexas. Es decir, muestre como modificar la búsuqeda a profundidad para asignar a cada vértice _v_ un entero _v.cc_ entre 1 y _k_, donde _k_ es el número de componentes conexas de G, tal que _u.cc_ = _v.cc_ si y solo si _u_ y _v_ estań en la misma componente conexa.
+1. Muestre que podemos usar una búsqueda a profundidad sobre una gráfica no dirigida G para identifiar las componentes conexas de G, y que el bosque a profundidad contiene tantos árboles como G tiene componentes conexas. Es decir, muestre como modificar la búsuqeda a profundidad para asignar a cada vértice _v_ un entero _v.cc_ entre 1 y _k_, donde _k_ es el número de componentes conexas de G, tal que _u.cc_ = _v.cc_ si y solo si _u_ y _v_ estań en la misma componente conexa.
