@@ -75,12 +75,22 @@ El algortimo que hace búsqueda por amplitud en gráficas se encuentra en [bfs.p
 
 ![bfs](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/img/bfs.png "BFS")
 
+#### Propiedades
+La búsqueda por amplitud encuentra en la gráfica G las distancias más cortas para las trayectorias que llegan a cada vértice desde un vértice origen _s_. La distancia más corta para la trayectoria de _s_ a _v_ es el mínimo número de aristas en cualquier trayectoria que parta del vérice _s_ y que llegue a _v_; si no hay trayectoria de _s_ a _v_, entonces la distancias más corta para la trayectoria de _s_ a _v_ es infinito. El prodecimiento de búsqueda por amplitud construye un árbol por amplitud al ir analizando la gráfica G. Este árbol se forma con los atributos _padre_ de los vértices, por lo que la llamamos subgráfica de predecesores de G. El árbol por amplitud contiene una trayectoria única simple de _s_ a _v_ que es también la trayectoria más corta de _s_ a _v_ en G.
+
+#### Ejercicio
+El diámetro de un árbol T=(V,E) se define como la distancia más grande de entre las trayectorias más cortas para el árbol. Proporcione un algoritmo para calcular el diámetro de un árbol.
+
 
 ### DFS en Python
 El algortimo que hace búsqueda por amplitud en gráficas se encuentra en [bfs.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/bfs.py), su ejecución se ejemplifica por la imagen siguiente, tomada del libro _Introduction to Algorithms_ por Thomas H. Cormen, et al.
 
 ![dfs](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/img/dfs.png "DFS")
 
+#### Propiedades de la búsqueda a profundidad
+La búsqueda a profundidad produce información valiosa acerca de la estructura de la gráfica. La propiedad básica más importante es que la subgráfica de predecesores forma un bosque de árboles. Otra propiedad importante de esta búsqueda es que los tiempos en los que los vértices son descubiertos y finalizados tienen una *esctrutura de paréntesis*. Si representamos el descubrimiento de un vértice _u_ con un paréntesis izquierdo "_(u_" y representamos su término por un paréntesis derecho "_u)_", entonces la historia de descubrimientos y términos genera una expresión bien formada en el sentido de que los paréntesis están anidados apropiadamente.
+
 #### Ejercicios
 1. Reescriba el procedimiento DFS, usando una pila para eliminar la recusión.
 1. Muestre que podemos usar una búsqueda a profundidad sobre una gráfica no dirigida G para identifiar las componentes conexas de G, y que el bosque a profundidad contiene tantos árboles como G tiene componentes conexas. Es decir, muestre como modificar la búsuqeda a profundidad para asignar a cada vértice _v_ un entero _v.cc_ entre 1 y _k_, donde _k_ es el número de componentes conexas de G, tal que _u.cc_ = _v.cc_ si y solo si _u_ y _v_ estań en la misma componente conexa.
+1. Proporcione un algoritmo que decida si una gráfica no dirigida G=(V,E) contiene un ciclo. 
