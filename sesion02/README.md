@@ -81,6 +81,12 @@ La búsqueda por amplitud encuentra en la gráfica G las distancias más cortas 
 #### Ejercicio
 El diámetro de un árbol T=(V,E) se define como la distancia más grande de entre las trayectorias más cortas para el árbol. Proporcione un algoritmo para calcular el diámetro de un árbol.
 
+#### Aplicación
+Supongamos que de entrada tenemos una gráfica _G = (V, E)_, representando una matriz _M_ de _nxn_ elementos. ¿Qué permutación de los vértices de _V_ minimiza la longitud de la arista más grande cuando los vértices se ordenan sobre una línea? Este problema se conoce como _reducción del ancho de banda_ y surge, por ejemplo, al acomodar un conjunto de _n_ componentes de un circuito en línea sobre una placa de manera que se minimice la longitud del cable más largo, donde podemos considerar a cada componente del circuito como un vértice y a cada cable enlazando a dos componentes como una arista. Alternativamente, considere una aplicación de hipertexto de manera que se almacenan objetos grandes (como imágenes) en una cinta magnética. De cada imagen hay un conjunto de posibles imágenes a las que se pueden llegar (i.e. los hipervínculos). Para minimizar el tiempo de búsqueda, se intenta acomodar imágenes enlazadas cerca una de la otra en la cinta. Este es justamente el problema de reducción de ancho de banda.
+
+Hay heurísticas que se basan en ejecutar una búsqueda primero por amplitud desde un vértice dado _v_, donde _v_ se ubica en el punto más a la izquierda. Todos los vértices a distancia 1 de _v_ se ubican a su derecha inmediata, seguidos por lo vértices a distancia 2, así se continúa hasta llegar al vértice más alejado de _v_.
+
+---
 
 ### DFS en Python
 El algortimo que hace búsqueda por amplitud en gráficas se encuentra en [bfs.py](https://github.com/nohernan/Matematicas_Discretas/blob/master/sesion02/bfs.py), su ejecución se ejemplifica por la imagen siguiente, tomada del libro _Introduction to Algorithms_ por Thomas H. Cormen, et al.
@@ -94,3 +100,9 @@ La búsqueda a profundidad produce información valiosa acerca de la estructura 
 1. Reescriba el procedimiento DFS, usando una pila para eliminar la recusión.
 1. Muestre que podemos usar una búsqueda a profundidad sobre una gráfica no dirigida G para identifiar las componentes conexas de G, y que el bosque a profundidad contiene tantos árboles como G tiene componentes conexas. Es decir, muestre como modificar la búsuqeda a profundidad para asignar a cada vértice _v_ un entero _v.cc_ entre 1 y _k_, donde _k_ es el número de componentes conexas de G, tal que _u.cc_ = _v.cc_ si y solo si _u_ y _v_ estań en la misma componente conexa.
 1. Proporcione un algoritmo que decida si una gráfica no dirigida G=(V,E) contiene un ciclo. 
+
+
+#### Aplicación
+Supongamos que se tiene una gráfica _G=(V,E)_. Deseamos colorear los vértices de _V_ usando el mínimo número de colores tal que para cada arista _(i,j)_, los vértices _i_ y _j_ tienen diferentes colores. ¿Se puede colorear la gráfica usando únicamente dos diferentes colores? - Un caso especial importante es determinar si una gráfica es _bipartita_, lo que significa que puede ser coloreada usando dos colores diferentes. Tal coloración de los vértices de una gráfica bipartita significa que la gráfica puede ser dibujada con vértices rojos a la izquierda y azules a la derecha de manera que todas las aristas van de izquierda a derecha. Las gráficas bipartitas surgen naturalmente en aplicaciones tales como la asignación de posibles tareas a trabajadores.
+
+Verificar si una gráfica es bipartita es fácil. Se colorea el primer vértice azul, se realiza entonces una búsqueda a profundidad sobre la gráfica. Cada que se descubre un vértice nuevo sin color, se pinta opuesto a su padre. Si en algún momento se encuentra una arista con ambos vértices del mismo color, entonces la gráfica no puede ser bipartita. De otro modo, esta coloración será exitosa usando únicamente dos colores.
