@@ -98,7 +98,7 @@ La búsqueda a profundidad produce información valiosa acerca de la estructura 
 
 #### Ejercicios
 1. Reescriba el procedimiento DFS, usando una pila para eliminar la recusión.
-1. Muestre que podemos usar una búsqueda a profundidad sobre una gráfica no dirigida G para identifiar las componentes conexas de G, y que el bosque a profundidad contiene tantos árboles como G tiene componentes conexas. Es decir, muestre como modificar la búsuqeda a profundidad para asignar a cada vértice _v_ un entero _v.cc_ entre 1 y _k_, donde _k_ es el número de componentes conexas de G, tal que _u.cc_ = _v.cc_ si y solo si _u_ y _v_ estań en la misma componente conexa.
+1. Muestre que podemos usar una búsqueda a profundidad sobre una gráfica no dirigida G para identifiar las componentes conexas de G, y que el bosque a profundidad contiene tantos árboles como G tiene componentes conexas. Es decir, muestre como modificar la búsqueda a profundidad para asignar a cada vértice _v_ un entero _v.cc_ entre 1 y _k_, donde _k_ es el número de componentes conexas de G, tal que _u.cc_ = _v.cc_ si y solo si _u_ y _v_ estań en la misma componente conexa.
 1. Proporcione un algoritmo que decida si una gráfica no dirigida G=(V,E) contiene un ciclo. 
 
 
