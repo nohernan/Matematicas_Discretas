@@ -6,6 +6,7 @@ def partition(arr,p,r):
             i += 1
             arr[i],arr[j] = arr[j],arr[i]
     arr[i+1],arr[r] = arr[r],arr[i+1]
+    print(arr)
     return (i+1)
 
 
@@ -16,11 +17,13 @@ def quickSort(arr,p,r):
         quickSort(arr,q+1,r)
 
 
-#a = [5,11,15,2]
-a=[2,8,7,1,3,5,6,4]
+a = [2,8,7,1,3,5,6,4]
+#a = [10,9,8,7,6,5,4,3]
+#a = [13, 19, 9, 5, 12, 8, 7, 4, 21, 2, 6, 11]
+#a = [8,8,8,8,8,8,8,8]
 
-print('Sorting ', a)
+print('\nSorting ', a)
 print(quickSort(a,0,len(a)-1))
-print('Print ', a)
+
   
  
